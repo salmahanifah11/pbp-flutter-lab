@@ -58,3 +58,26 @@ Navigator bekerja seperti sebuah stack di mana stack tersebut menyimpan data ber
 Membuat hamburger bar dengan menggunakan widget drawer yang setiap pilihannya akan tertuju pada page berbeda, yakni antara counter_7, tambah budget, dan data budget.
 Membuat file baru bernama form.dart untuk meminta input user melalui form menggunakan TextFormField dan DropdownButtonFormField. Menginisiasikan variabel sebagai elemen input yang bertipekan data string dan membuat list untuk menyimpan data hasil dar input user. Lalu membuat button untuk menyimpan input user dan memberikan pop-up message.
 Membuat file baru bernama data.dart yang berfungsi untuk menampilkan list data input dari user.
+
+
+# TUGAS 9
+
+### 1. Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Bisa dengan melakukan pengambilan data JSON lalu disimpan pada suatu variabel. Namun, hanya baik dilakukan jika data JSON kecil. Jika ukuran data JSON sedang atau besar, disarankan untuk membuat model terlebih dahulu untuk menjaga kejelasan kode, kemudahan refactoring, dan efisiensi.
+
+### 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* ListView: untuk mengenerate widget-widget lain dengan method builder().
+* Checkbox: untuk input value bertipe true atau false.
+* FutureBuilder: untuk membangun tampilan dirinya sendiri.
+
+### 3. Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+* Serialisasikan JSON menggunakan code generation.
+* Ambil atau buat data JSON dari sautu network.
+* Serialisasikan data JSON, lalu simpan data kedalam suatu query atau list.
+* Tampilkan data dan atributnya menggunakan widget.
+
+### 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Buat sebuah model untuk menampung data.
+2. Buat sebuah page untuk me-render card dari setiap anggota list yang ada.
+3. Terapkan dinamic routing kepada setiap object atau card.
+4. Sesuaikan segala fungsi widget.
