@@ -3,10 +3,10 @@ import 'package:counter_7/page/data.dart';
 import 'package:counter_7/main.dart';
 import 'package:counter_7/page/mywatchlist_page.dart';
 import 'package:counter_7/model/mywatchlist.dart';
-import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'package:intl/intl.dart';
 
 class MyWatchListDataPage extends StatelessWidget {
   const MyWatchListDataPage({ super.key, required this.watchList });
@@ -93,7 +93,7 @@ class MyWatchListDataPage extends StatelessWidget {
                         
                         children: [
                           const TextSpan(text: 'Release Date: ', style: TextStyle(fontWeight: FontWeight.bold)),
-                          TextSpan(text: DateFormat.yMMMd('en_US').format(watchList.fields.releaseDate)),
+                          TextSpan(text: DateFormat.yMMMd().format(watchList.fields.releaseDate)),
 
                           const TextSpan(text: '\nRating: ', style: TextStyle(fontWeight: FontWeight.bold)),
                           TextSpan(text: '${watchList.fields.rating.toString()}/5'),

@@ -3,6 +3,7 @@
 //     final myWatchList = myWatchListFromJson(jsonString);
 
 import 'dart:convert';
+import 'package:http/http.dart';
 
 List<MyWatchList> myWatchListFromJson(String str) => List<MyWatchList>.from(json.decode(str).map((x) => MyWatchList.fromJson(x)));
 
