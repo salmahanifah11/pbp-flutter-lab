@@ -48,11 +48,9 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
             drawer: Drawer(
                 child: Column(
                   children: [
-                    // Menambahkan clickable menu
                     ListTile(
                       title: const Text('counter_7'),
                       onTap: () {
-                        // Route menu ke halaman utama
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(builder: (context) => const MyHomePage()),
@@ -62,7 +60,6 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
                     ListTile(
                       title: const Text('Tambah Budget'),
                       onTap: () {
-                        // Route menu ke halaman form
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(builder: (context) => const MyFormPage()),
@@ -72,7 +69,6 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
                     ListTile(
                       title: const Text('Data Budget'),
                       onTap: () {
-                        // Route menu ke halaman data budget
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(builder: (context) => const MyDataPage()),
@@ -82,7 +78,6 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
                     ListTile(
                       title: const Text('My Watchlist'),
                       onTap: () {
-                        // Route menu ke halaman watchlist
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(builder: (context) => const MyWatchListPage()),

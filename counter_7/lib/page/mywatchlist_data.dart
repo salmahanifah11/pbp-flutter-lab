@@ -22,11 +22,9 @@ class MyWatchListDataPage extends StatelessWidget {
           drawer: Drawer(
               child: Column(
                 children: [
-                  // Menambahkan clickable menu
                   ListTile(
                     title: const Text('counter_7'),
                     onTap: () {
-                      // Route menu ke halaman utama
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => const MyHomePage()),
@@ -36,7 +34,6 @@ class MyWatchListDataPage extends StatelessWidget {
                   ListTile(
                     title: const Text('Tambah Budget'),
                     onTap: () {
-                      // Route menu ke halaman form
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => const MyFormPage()),
@@ -46,7 +43,6 @@ class MyWatchListDataPage extends StatelessWidget {
                   ListTile(
                     title: const Text('Data Budget'),
                     onTap: () {
-                      // Route menu ke halaman data budget
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => const MyDataPage()),
@@ -56,7 +52,6 @@ class MyWatchListDataPage extends StatelessWidget {
                   ListTile(
                     title: const Text('My Watchlist'),
                     onTap: () {
-                      // Route menu ke halaman watchlist
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => const MyWatchListPage()),
@@ -84,8 +79,6 @@ class MyWatchListDataPage extends StatelessWidget {
                     const SizedBox(height: 8,),
                     RichText(
                       text: TextSpan(
-                        // Note: Styles for TextSpans must be explicitly defined.
-                        // Child text spans will inherit styles from parent
                         style: const TextStyle(
                           color: Colors.black,
                           height: 1.9,
